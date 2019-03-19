@@ -69,5 +69,8 @@ module.exports = {
             new UglifyJsWebpackPlugin(),
             new OptimizeCSSAssetsPlugin({}),
         ],
+        splitChunks: {
+            chunks: 'all',
+        },
     },
 }
