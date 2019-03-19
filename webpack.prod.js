@@ -55,13 +55,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'index.html')
+            template: path.resolve(__dirname, 'index.html'),
         }),
         new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].[hash:8].css',
-            chunkFilename: "[id].[hash:8].css"
+            chunkFilename: '[id].[hash:8].css',
         }),
     ],
     optimization: {
