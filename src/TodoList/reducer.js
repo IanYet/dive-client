@@ -1,6 +1,7 @@
 import { ADD_TODO, DELETE_TODO } from './actionTypes'
 
 const reducer = (state, action) => {
+    console.log(action);
     switch (action.type) {
         case ADD_TODO: {
             const todo = {}

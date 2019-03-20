@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { actions, TodoContext } from '../TodoList'
+import { todoActions, TodoContext } from '../TodoList'
 
 const TodoItem = props => {
     const { dispatch } = useContext(TodoContext)
@@ -7,7 +7,7 @@ const TodoItem = props => {
     return (
         <div>
             <p>{props.value}</p>
-            <button onClick={() => dispatch(actions.deleteTodo(props.id))}>
+            <button onClick={() => dispatch(todoActions.deleteTodo(props.id))}>
                 x
             </button>
         </div>

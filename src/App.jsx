@@ -1,8 +1,12 @@
 import React from 'react'
-import './app.css'
+import TodoInput from './TodoInput'
+import { TodoList, TodoProvider } from './TodoList'
 
 const App = props => (
-    <h1>hhh</h1>
+    <TodoProvider>
+        <TodoInput />
+        <TodoList />
+    </TodoProvider>
 )
 
 export default App

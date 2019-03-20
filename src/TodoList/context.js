@@ -6,7 +6,7 @@ const TodoContext = createContext()
 const initContext = []
 
 const TodoProvider = props => {
-    const {state, dispatch} = useReducer(reducer, initContext)
+    const [state, dispatch] = useReducer(reducer, initContext)
 
     return (
         <TodoContext.Provider value={{state, dispatch}}>
